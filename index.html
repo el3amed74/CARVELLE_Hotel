@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/icon.jpg">
+    <title> CARVELLE Hotel</title>
+</head>
+<body>
+    <!-- start header -->
+    <div class="header" id="header">
+        <div class="contaner">
+            <div class="logo"> CARVELLE </div>
+            <div class="list">
+                <i class="fas fa-bars">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#Cars">Cars</a></li>
+                        <li><a href="#Booking">Booking</a></li>
+                    </ul>
+                </i>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+     <!-- start home -->
+     <div class="home" id="Home">
+        <div class="homecontaner">
+            <div class="introtext">
+                <h1>Welcome in CARVELLE Hotel</h1>
+                <p>Have a nice Journy</p>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
+    <!-- start about -->
+    <div class="about" id="About"> 
+        <div class="aboutus">
+            <h1>We Have Two Hotels :</h1>
+            <p>
+                <i class="fas fa-thumbtack"></i> Cairo 
+                <span> View in Map <a href="https://www.google.com.eg/maps/@26.9060999,30.8768375,6z?hl=en" target="_blank">
+                <i class="fas fa-map-marked-alt"></i> </a> 
+                 </span>
+            </p>
+            <p>
+                <i class="fas fa-thumbtack"></i> Sharm El Sheikh
+                <span> View in Map <a href="https://www.google.com.eg/maps/@26.9060999,30.8768375,6z?hl=en" target="_blank">
+                <i class="fas fa-map-marked-alt"></i> </a> 
+                </span>
+            </p>
+        </div>
+        <div class="clientquotes">
+            <h2>Clients' Quotes</h2>
+            <div class="client1">
+                <img src="images/person1.jpg" alt="client">
+                <h1> Fernando jon</h1>
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente id eligendi et rem, libero laboriosam.
+                </span>
+            </div>
+        </div>   
+    </div> 
+    <!-- end about -->
+    <!-- start gallery -->
+    <div class="gallery" id="Gallery">
+        <h2> Gallery </h2>
+        <div class="Gcontaner">
+            <a href="images/gallery1.jpg" target="_blank"><img src="images/gallery1.jpg" alt=""></a>
+            <a href="images/gallery2.jpg"target="_blank"><img src="images/gallery2.jpg" alt=""></a>
+            <a href="images/gallery3.jpg" target="_blank"><img src="images/gallery3.jpg" alt=""></a>
+            <a href="images/gallery4.jpg" target="_blank"><img src="images/gallery4.jpg" alt=""></a>
+            <a href="images/gallery5.jpg" target="_blank"><img src="images/gallery5.jpg" alt=""></a>
+            <a href="images/gallery6.jpg" target="_blank"><img src="images/gallery6.jpg" alt=""></a>
+        </div>
+    </div>
+    <!-- end gallery -->
+     <!-- start car -->
+    <div class="car" id="Cars">
+        <h1> Rent a car from Hotel</h1>
+        <div class="info">
+            <input type="text" placeholder="Enter Name" id="name">
+            <input type="text" placeholder="Enter Email" id="Email">
+            <input type="number" placeholder="Enter SSN" id="ssn">
+            <input type="number" placeholder="Enter no.room" id="nroom">
+            <form action="" class="carForm">
+                <select id="select">
+                    <option value="" selected disabled>select a car</option>
+                    <option value="Audi A3 Sedan" >Audi A3 Sedan </option>
+                    <option value="Audi A5 Coupe" >Audi A5 Coupe</option>
+                    <option value="BMW X3" >BMW X3 </option>
+                    <option value="BMW 8 Series" >BMW 8 Series </option>
+                    <option value="Mercedes-Benz C Class" >Mercedes-Benz C Class </option>
+                    <option value="Toyota Rush" >Toyota Rush </option>
+                    <option value="Chevrolet Tahoe">Chevrolet Tahoe </option>
+               </select>
+            </form>
+           <input type="submit" value="submit" class="submit" onclick="rentCar()">
+        </div>
+        <div class="carimg">
+            <a href="images/Mercedes-Benz C Class Cabriolet.jpg" target="_blank"><img src="images/Mercedes-Benz C Class Cabriolet.jpg"></a>
+            <a href="images/Toyota Rush.jpg" target="_blank"><img src="images/Toyota Rush.jpg"></a>
+            <a href="images/Audi A3 Sedan.jpg" target="_blank"><img src="images/Audi A3 Sedan.jpg"></a>
+            <a href="images/BMW X3.jpg" target="_blank"><img src="images/BMW X3.jpg"></a>
+        </div>
+    </div>
+    <!-- end car -->
+    <!-- start booking -->
+    <div class="booking" id="Booking">
+        <h1>Booking</h1>
+        <form action="" class="form">
+            <input type="text" name="f-name" id="f-name" placeholder="Name"><br><br>
+            <input type="email" name="email" id="email" placeholder="Email">
+             <h2>Type of room :</h2>
+             <input type="radio" name="room-type" id="single" ><label for="">Single </label>
+            <br>
+             <input type="radio" name="room-type" id="double" ><label for="">Double </label>
+            <br>
+            <label for="">Cick in: </label><br><input type="date" id="sdate"> <br> <br>
+            <label for="">Chick out: </label><br><input type="date"  id="no-days" ><br> <br>
+            <input type="button" onclick="cheecked()" value="submit" class="submit">
+        </form>
+    </div>
+    <!-- end booking -->
+    <!-- start connection -->
+    <footer>
+        <div class="icons">
+            <div class="social">
+                &copy;Ahmed Salem
+                <i class="fas fa-at" ></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i> 
+            </div>
+        </div>
+    </footer>
+    <!-- end connection -->
+    <i class="fas fa-arrow-circle-up" id="goup"></i>
+    <script src="js/script.js"></script>
+</body>
+</html>
